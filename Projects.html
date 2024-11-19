@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projects</title>
+    <!-- Include jQuery (required by DataTables) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include DataTables CSS (for styling the table) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+
+    <!-- Include DataTables JS -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+</head>
+<body>
+    <div class="Content">
+        <h1 class="Signal-Project">Projects</h1>
+        <div class="Signal-Project">
+            <label for="SearchBox">Project Title:</label>
+            <input id="SearchBox" type="text">
+
+            <label for="FilterInput">Field:</label>
+            <select id="FilterInput" onchange="FilterTable()">
+                <option value="None">All</option>
+                <option value="Bioinformatics">Bioinformatics</option>
+                <option value="Web Developement">Web Developement</option>
+            </select>
+        </div>
+        <div class="Signal-Project">
+            <div class="Table">
+                <table id="ProjectsTable">
+                    <thead>
+                        <th>Title</th>
+                        <th>Version</th>
+                        <th>Field</th>
+                        <th>Topic</th>
+                        <th>Release Date</th>
+                        <th>Last Update</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <!--Content will be load dinamically-->
+                        <!--
+                        <tr>
+                            <td><a href="https://github.com/OSCAR-CASALS/Final_degree_proyect-Variant-calling-in-highly-homologous-regions">Variant calling in highly homologous regions</a></td>
+                            <td>1.0</td>
+                            <td>Bioinformatics</td>
+                            <td>Variant Calling</td>
+                            <td>2023-06-21</td>
+                            <td>2023-06-21</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://oscar-casals.github.io/TheRomanConverter">Roman Converter</a></td>
+                            <td>1.0</td>
+                            <td>2023-11-22</td>
+                            <td>Web Developement</td>
+                            <td>2023-06-30</td>
+                            <td>2023-06-22</td>
+                        </tr>
+                        -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Title</th>
+                            <th>Version</th>
+                            <th>Field</th>
+                            <th>Topic</th>
+                            <th>Release Date</th>
+                            <th>Last Update</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="Post-Right"></div>
+    <div class="Post-Left"></div>
+    <a class="leftLink" href="index.html"><</a>
+    <a class="rightLink" href="Experience.html">></a>
+</body>
+<script>
+
+    let table;
+    $(document).ready( function () {
+        table = $('#ProjectsTable').DataTable({
+            "pageLength": 3,
+            "lengthChange": false,
+            "order": [[4, 'desc']]
+        });
+
+    $.getJSON("Projects.json", function(data){
+        data.forEach(function(item){
+            let color = "brown";
+
+            switch(item.field){
+                case "Bioinformatics":
+                    color = "green";
+                    break;
+                case "Web Developement":
+                    color = "red";
+                    break;
+            }
+
+            let rowIndex = table.row.add([
+                '<a target="_blank" rel="noopener noreferrer" href="' + item.url + '">' + item.title + '</a>',
+                item.version,
+                item.field,
+                item.topic,
+                item.release_date,
+                item.last_update,
+                item.Description
+            ]).draw().index();
+
+            let cell = table.cell(rowIndex, 2).node();  // Access the cell in the "field" column (index 2)
+
+            $(cell).css('background-color', color);
+            
+            console.log(rowIndex);
+            });
+        });
+    });
+
+    // Filter table entries
+
+    function FilterTable(){
+        let f = document.getElementById("FilterInput").value;
+        if (f == 'None'){
+            f = '';
+        }
+
+        table.column(2).search(f).draw();
+    }
+
+    function SearchProject(){
+        let q = document.getElementById("SearchBox").value;
+        table.column(0).search(q).draw();
+    }
+
+    addEventListener('input', SearchProject);
+
+</script>
+</html>
