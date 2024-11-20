@@ -7,7 +7,7 @@
         "release_date": "2023-06-21",
         "last_update": "2023-06-21",
         "url": "https://github.com/OSCAR-CASALS/Final_degree_proyect-Variant-calling-in-highly-homologous-regions",
-        "Description": "A pipeline to perform variant calling on regions with high homology to a pseudogene."
+        "Description": "Variant calling on regions with high homology to pseudogenes."
     },
     {
         "title": "Roman Converter",
@@ -17,7 +17,7 @@
         "release_date": "2023-06-30",
         "last_update": "2023-06-22",
         "url": "https://oscar-casals.github.io/TheRomanConverter",
-        "Description": "A web app for translating positive integers to roman numbers."
+        "Description": "Web for translating integers to roman numbers."
     },
     {
         "title": "2D portfolio",
@@ -27,7 +27,7 @@
         "release_date": "2024-05-22",
         "last_update": "2024-05-24",
         "url": "https://oscar-casals.github.io/2D_Portfolio/",
-        "Description": "A version of my portfolio styled like a 2D NES Game"
+        "Description": "Version of my portfolio styled like a 2D NES Game"
     },
     {
         "title": "Smith Waterman",
@@ -37,7 +37,7 @@
         "release_date": "2023-07-05",
         "last_update": "2023-07-05",
         "url": "https://github.com/OSCAR-CASALS/c-_implementation_of_SmithWaterman",
-        "Description": "A version of my portfolio styled like a 2D NES Game"
+        "Description": "C++ implementation of Smith Waterman."
     },
     {
         "title": "Horror Stories",
@@ -47,7 +47,7 @@
         "release_date": "2023-09-29",
         "last_update": "2023-10-02",
         "url": "https://horrorsite.vercel.app/",
-        "Description": "A website were users can publish horror stories."
+        "Description": "Website were users can publish horror stories."
     },
     {
         "title": "Random Quotes",
@@ -57,7 +57,7 @@
         "release_date": "2023-10-25",
         "last_update": "2023-11-29",
         "url": "https://oscar-casals.github.io/RANDOMQUOTES/",
-        "Description": "This is a web app made with React that displays a random quotes. WARNING: A lot of the quotes are jokes therefore can't be taken seriously.."   
+        "Description": "Web app that displays a random quotes."   
     },
     {
         "title": "3_Bullets",
@@ -67,7 +67,7 @@
         "release_date": "2024-05-05",
         "last_update": "2043-05-05",
         "url": "https://oscar-casals.github.io/3_Bullets/",
-        "Description": "A simple shoot'em up to test Kaboom.js."    
+        "Description": "Simple shoot'em up to test Kaboom.js."  
     },
     {
         "title": "Heart Failure",
@@ -77,6 +77,6 @@
         "release_date": "2021-12-17",
         "last_update": "2021-12-17",
         "url": "https://drive.google.com/file/d/1ihfroA6lUjt2xpkZwFAnxLAcguIyBDc99e4-WmBtPfc/view",
-        "Description": "A model that explains death after having a heart failure condition."
+        "Description": "Model to explain death post heart failure condition."
     }
 ]

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Projects</title>
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/pw/ADCreHfQvqozCFjwOm3EXkAahfkQW4-kyKtq17RelUznhJU3bEhCEMwO0zDD0ZKzEEeryKmZR7jV0h_enMb9L0lvQ5yTSZvX9dMoizjhh0yGbbPNFlMhbXmDcMV7EuRNpvOyU8yHQ56si1Tu9AKZ4O6e4b8=w522-h725-s-no-gm?authuser=0">
     <!-- Include jQuery (required by DataTables) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -14,24 +15,25 @@
     <!-- Include DataTables JS -->
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
 
+    <link rel="stylesheet" href="phoneStyles.css">
 </head>
 <body>
     <div class="Content">
         <h1 class="Signal-Project">Projects</h1>
         <div class="Signal-Project">
             <label for="SearchBox">Project Title:</label>
-            <input id="SearchBox" type="text">
+            <input id="SearchBox" type="text" style="width: 20%;">
 
             <label for="FilterInput">Field:</label>
-            <select id="FilterInput" onchange="FilterTable()">
+            <select id="FilterInput" onchange="FilterTable()" style="width: 20%;">
                 <option value="None">All</option>
                 <option value="Bioinformatics">Bioinformatics</option>
                 <option value="Web Developement">Web Developement</option>
             </select>
         </div>
         <div class="Signal-Project">
-            <div class="Table">
-                <table id="ProjectsTable">
+            <div class="Table" style="overflow-x: auto;">
+                <table id="ProjectsTable" class="IntTable">
                     <thead>
                         <th>Title</th>
                         <th>Version</th>
@@ -70,6 +72,7 @@
                             <th>Topic</th>
                             <th>Release Date</th>
                             <th>Last Update</th>
+                            <th>Description</th>
                         </tr>
                     </tfoot>
                 </table>
@@ -86,7 +89,7 @@
     let table;
     $(document).ready( function () {
         table = $('#ProjectsTable').DataTable({
-            "pageLength": 3,
+            "pageLength": 2,
             "lengthChange": false,
             "order": [[4, 'desc']]
         });
@@ -111,7 +114,7 @@
                 item.topic,
                 item.release_date,
                 item.last_update,
-                item.Description
+                '<p style="font-size: small">' + item.Description + '</p>'
             ]).draw().index();
 
             let cell = table.cell(rowIndex, 2).node();  // Access the cell in the "field" column (index 2)

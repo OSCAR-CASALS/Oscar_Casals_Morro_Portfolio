@@ -1,0 +1,64 @@
+/*Phone Dimensions*/
+
+@media (max-width: 600px) {
+    
+    .Signal{
+        /*background-color: burlywood;*/
+        background-color: #140100;
+        background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        padding: 6px;
+        color: white;
+        text-align: center;
+        margin-top: 2vh;
+        width: 60vw;
+        animation: IntroAnim 1s linear 1;
+    }
+
+    .rightLink{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.5);
+        top: 20%;
+        right: 4%;
+        height: 60vh;
+        text-align: center;
+        line-height: 60vh;
+        padding: 0 3px;
+        font-size: large;
+        color: tomato;
+        border-color: tomato;
+        border-style: solid;
+        border-width: thick;
+        text-decoration: none;
+    }
+
+    .leftLink{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.5);
+        top: 20%;
+        left: 4%;
+        height: 60vh;
+        text-align: center;
+        line-height: 60vh;
+        padding: 0 3px;
+        font-size: large;
+        color: tomato;
+        border-color: tomato;
+        border-style: solid;
+        border-width: thick;
+        text-decoration: none;
+    }
+    
+    .Signal-Project{
+        /*background-color: burlywood;*/
+        background-color: #140100;
+        background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        padding: 10px;
+        color: white;
+        text-align: center;
+        margin-top: 2vh;
+        width: 70%;
+        animation: IntroAnim 1s linear 1;
+    }
+}
