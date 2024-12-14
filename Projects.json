@@ -78,5 +78,15 @@
         "last_update": "2021-12-17",
         "url": "https://drive.google.com/file/d/1ihfroA6lUjt2xpkZwFAnxLAcguIyBDc99e4-WmBtPfc/view",
         "Description": "Model to explain death post heart failure condition."
-    }
+    },
+    {
+        "title": "TEA Analysis",
+        "version": "1.0",
+        "field": "Data Science",
+        "topic": "Statistics",
+        "release_date": "2024-11-29",
+        "last_update": "2024-11-29",
+        "url": "https://github.com/OSCAR-CASALS/Anilisis-descriptiva-i-inferencial-del-TEA",
+        "Description": "Anàlisis descriptiu e inferencial del TEA a Africa, America, Europa, Asia i Oceania."
+    }   
 ]
