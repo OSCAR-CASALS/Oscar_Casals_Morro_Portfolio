@@ -88,15 +88,5 @@
         "last_update": "2024-11-29",
         "url": "https://github.com/OSCAR-CASALS/Anilisis-descriptiva-i-inferencial-del-TEA",
         "Description": "Anàlisis descriptiu e inferencial del TEA a Africa, America, Europa, Asia i Oceania."
-    },
-    {
-        "title": "Differential Expression Analysis analysis of 45% high-fat diet in Mus Musculus white adipose tissue",
-        "version:" "1.0",
-        "field": "Bioinformatics",
-        "topic": "Differential Expression Analysis",
-        "release_date": "2024-12-23",
-        "last_update": "2024-12-23",
-        "url": "https://oscar-casals.github.io/Differential-Expression-Analysi-analysis-of-45-high-fat-diet-in-Mus-Musculus-white-adipose-tissue/",
-        "Description": "Analysis of how high calory diets affect house mouse."
     }
 ]
