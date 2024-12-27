@@ -98,5 +98,15 @@
         "last_update": "2024-12-23",
         "url": "https://oscar-casals.github.io/Differential-Expression-Analysi-analysis-of-45-high-fat-diet-in-Mus-Musculus-white-adipose-tissue/",
         "Description": "Differential Expression Analysis of high fat diet in house mouse"
+    },
+    {
+        "title": "Matriculacio de vehicles nous",
+        "version": "1.0",
+        "field": "Data Science",
+        "topic": "Web Scrapping",
+        "release_date": "2024-11-11",
+        "last_update": "2024-11-11",
+        "url": "https://github.com/OSCAR-CASALS/Matriculacio-de-vehicles",
+        "Description": "Web-Scraping tool to extract information about registration and sales of vehicles."
     }
 ]
