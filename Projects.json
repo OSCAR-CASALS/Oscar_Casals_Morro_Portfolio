@@ -108,5 +108,15 @@
         "last_update": "2024-11-11",
         "url": "https://github.com/OSCAR-CASALS/Matriculacio-de-vehicles",
         "Description": "Web-Scraping tool to extract information about registration and sales of vehicles."
+    },
+    {
+        "title": "Avalanches in Spain",
+        "version": "1.0",
+        "field": "Data Science",
+        "topic": "Show data through website",
+        "release_date": "2025-01-10",
+        "last_update": "2025-01-10",
+        "url": "https://avalanches-in-spain.onrender.com/",
+        "Description": "Web application to show data related to avalanche accidents in Spain."
     }
 ]
