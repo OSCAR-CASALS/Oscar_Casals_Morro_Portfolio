@@ -258,13 +258,13 @@ body {
 
     animation: IntroAnim 1s linear 1;
 }
-
+/*
 a:hover img{
     border-style: solid;
     border-width: thick;
     border-color: tomato;
 }
-
+*/
 .dataTables_filter {
     display: none;
 }
