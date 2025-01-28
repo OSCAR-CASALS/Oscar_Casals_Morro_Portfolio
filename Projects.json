@@ -121,11 +121,11 @@
     },
     {
         "title": "Avalnche Accidents WebScrapper",
-        "version": "1.0",
+        "version": "1.1",
         "field": "Data Science",
         "topic": "Web Scrapping",
         "release_date": "2025-01-09",
-        "last_update": "2025-01-09",
+        "last_update": "2025-01-28",
         "url": "https://github.com/OSCAR-CASALS/Avalnche-Accidents-WebScrapper",
         "Description": "Selenium Web Scrapper to extract information from ACNA's accident database."
     }
