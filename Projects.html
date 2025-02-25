@@ -114,10 +114,10 @@
             let rowIndex = table.row.add([
                 '<a target="_blank" rel="noopener noreferrer" href="' + item.url + '">' + item.title + '</a>',
                 item.version,
-                item.field,
+                '<p class="topic_paragraph">' + item.field + '</p>',
                 '<p class="topic_paragraph">' + item.topic + '</p>',
-                item.release_date,
-                item.last_update,
+                '<p class="topic_paragraph">' + item.release_date + '</p>',
+                '<p class="topic_paragraph">' + item.last_update + '</p>',
                 '<p style="font-size: small">' + item.Description + '</p>'
             ]).draw().index();
 
