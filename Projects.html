@@ -112,8 +112,8 @@
             }
 
             let rowIndex = table.row.add([
-                '<a target="_blank" rel="noopener noreferrer" href="' + item.url + '">' + item.title + '</a>',
-                item.version,
+                '<p class="topic_paragraph">' + '<a target="_blank" rel="noopener noreferrer" href="' + item.url + '">' + item.title + '</a>' + '</p>',
+                '<p class="topic_paragraph">' + item.version + '</p>',
                 '<p class="topic_paragraph">' + item.field + '</p>',
                 '<p class="topic_paragraph">' + item.topic + '</p>',
                 '<p class="topic_paragraph">' + item.release_date + '</p>',
