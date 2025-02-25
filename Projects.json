@@ -128,5 +128,15 @@
         "last_update": "2025-01-28",
         "url": "https://github.com/OSCAR-CASALS/Avalnche-Accidents-WebScrapper",
         "Description": "Selenium Web Scrapper to extract information from ACNA's accident database."
+    },
+    {
+        "title": "Amazon impact retrieval",
+        "version": "0.1",
+        "field": "Data Science",
+        "topic": "Data pipeline and pre-trained models",
+        "release_date": "2025-02-18",
+        "last_update": "2025-02-18",
+        "url": "https://github.com/OSCAR-CASALS/Amazon-impact-retireval.git",
+        "Description": "Data pipeline to gauge how products similar to a proposal were seen in 2023."
     }
 ]
