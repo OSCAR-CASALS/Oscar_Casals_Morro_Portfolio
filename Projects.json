@@ -137,6 +137,6 @@
         "release_date": "2025-02-18",
         "last_update": "2025-02-18",
         "url": "https://github.com/OSCAR-CASALS/Amazon-impact-retireval.git",
-        "Description": "Data pipeline to gauge how products similar to a proposal were seen in 2023."
+        "Description": "Pipeline to gauge how offers fitting a description were seen in 2023."
     }
 ]
