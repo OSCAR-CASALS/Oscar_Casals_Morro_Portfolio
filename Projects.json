@@ -133,10 +133,10 @@
         "title": "Amazon impact retrieval",
         "version": "0.1",
         "field": "Data Science",
-        "topic": "Data pipeline and pre-trained models",
+        "topic": "Data pipeline and AI",
         "release_date": "2025-02-18",
         "last_update": "2025-02-18",
         "url": "https://github.com/OSCAR-CASALS/Amazon-impact-retireval.git",
-        "Description": "Data pipeline to see how products similar to a proposal were seen in 2023."
+        "Description": "Data pipeline to gauge how products similar to a proposal were seen in 2023."
     }
 ]
