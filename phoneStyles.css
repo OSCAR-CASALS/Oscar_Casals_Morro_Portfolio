@@ -63,4 +63,10 @@
     .topic_paragraph{
         font-size: small;
     }
+
+    .Table{
+        background-color: white;
+        color: black;
+        padding: 6px;
+    }
 }
