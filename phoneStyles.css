@@ -6,7 +6,6 @@
         /*background-color: burlywood;*/
         background-color: #140100;
         background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
-        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         padding: 6px;
         color: white;
         text-align: center;
@@ -53,7 +52,6 @@
         /*background-color: burlywood;*/
         background-color: #140100;
         background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
-        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
         padding: 10px;
         color: white;
         text-align: center;
@@ -61,4 +59,7 @@
         width: 70%;
         animation: IntroAnim 1s linear 1;
     }
+
+    .topic_paragraph{
+        font-size: small;
 }
