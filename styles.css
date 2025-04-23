@@ -194,6 +194,7 @@ body {
 
 .contenidor{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     background-image: url("https://www.esportselcim.com/image/cache/data/Mapes/Montseny-500x500.jpg");
